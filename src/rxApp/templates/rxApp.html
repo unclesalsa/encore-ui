@@ -1,0 +1,27 @@
+<div class="rx-app">
+    <nav class="rx-app-menu">
+        <header class="rx-app-branding">
+            <h1 class="site-title">Encore</h1>
+            <div class="site-options">
+                <a href="settings" class="site-settings">Settings</a>
+                <a href="site-logout" class="site-settings">Log Out</a>
+            </div>
+        </header>
+        <nav class="rx-app-nav">
+            <div class="nav-section nav-section-all">
+                <h2 class="nav-section-title">All Tools</h2>
+                <rx-app-nav items="pages" level="1"></rx-app-nav>
+            </div>
+        </nav>
+    </nav>
+    <div class="rx-app-page">
+        <header class="rx-app-page-header">
+            <rx-breadcrumbs></rx-breadcrumbs>
+        </header>
+        <div class="rx-app-page-body">
+            <h2 class="rx-app-page-title">{{pageTitle}}</h2>
+            <h2 class="rx-app-page-subtitle">{{pageSubtitle}}</h2>
+            <div class="rx-app-page-content" ng-transclude ui-view ng-view></div>
+        </div>
+    </div>
+</div>

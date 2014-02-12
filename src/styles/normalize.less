@@ -1,14 +1,9 @@
 @import 'vars';
 
-html {
-/* TODO line-height of 1 is too small */
-    line-height: 1;
-}
-
 html, body {
     height: 100%;
     font-family: "Roboto", sans-serif;
-    font-size: 10pt;
+    font-size: 13px;
 }
 body {
     margin: 0;
@@ -31,18 +26,9 @@ ol, ul, li {
     list-style: none;
 }
 
-/* TODO replace h1, h2 selectors with class names so that we're not tying our heading tags to a specific style */
-h1 {
-    font-size: 2.5em;
-    font-weight: 100;
-    color: #666;
-}
-h2 {
-    font-size: 2em;
-    font-weight: 100;
-    color: #666;
-    margin-top: 40px;
-    margin-bottom: 15px;
+/* http://blog.kevinlamping.com/post/46259129477/normalize-css-and-default-heading-styles */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
 }
 
 table {

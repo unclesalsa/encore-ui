@@ -1,6 +1,21 @@
 angular.module('encore.ui.configs', [])
 .constant('ROUTE_PATHS', {
-    'login': '/login'
+    'login': {
+        href: '/login',
+        text: 'Login'
+    },
+    'logout': {
+        href: '/logout',
+        text: 'Logout'
+    },
+    'cbs': {
+        href: '/cbs',
+        text: 'Databases'
+    },
+    'ticketQueues': {
+        href: '/ticketqueues',
+        text: 'Ticket Queues'
+    }
 })
 .value('devicePaths', [
     { value: '/dev/xvdb', label: '/dev/xvdb' },
